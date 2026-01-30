@@ -6,7 +6,7 @@ __pycache__/
 # Virtual environments
 .venv/
 venv/
-env/
+.env/
 
 # Logs
 *.log
@@ -19,4 +19,6 @@ Thumbs.db
 
 # Project-specific
 /test.py
+/report.md
 /tempCodeRunnerFile.py
+*.pdf
