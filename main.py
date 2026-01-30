@@ -10,7 +10,6 @@ from src.advanced.twap import execute_twap
 import os
 from dotenv import load_dotenv
 load_dotenv()
-# Replace with your Testnet credentials [cite: 68, 70]
 API_KEY = os.getenv('API_KEY')
 API_SECRET = os.getenv('SECRET_KEY')
 
@@ -30,7 +29,6 @@ def main():
     args = parser.parse_args()
 
     try:
-        # Validate inputs before calling API [cite: 14, 79]
         validate_inputs(args.symbol, args.side, args.qty, args.price, args.type)
         
         client = get_client(API_KEY, API_SECRET)
